@@ -1,2 +1,2 @@
 # EmailValidator
-Create to validate Email and consume endPoint from external source
+Created  to validate Email and consume endPoint from external source
