@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "TUvOzVSn3osGCzB1Zut3mCBUeLj9BEiQQuzWFb3WL6Y=",
+  "Source": "StatusRetrievalApplication",
+  "BasePath": "_content/StatusRetrievalApplication",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

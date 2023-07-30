@@ -1,6 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -11,6 +11,11 @@ namespace WebApplication1.Services
 {
     public class EventService : IEventService
     {
+        private readonly ILogger<EventService> _logger;
+        public EventService(ILogger<EventService> logger)
+        {
+            _logger = logger;
+        }
 
         public async Task<StatusDetail> GetStatusDetails(string email)
         {
@@ -27,18 +32,18 @@ namespace WebApplication1.Services
                     if (response.IsSuccessStatusCode)
                     {
                         statusDetail = JsonConvert.DeserializeObject<StatusDetail>(await response.Content.ReadAsStringAsync());
-                        statusDetail.Events = statusDetail.Events.Where(x => x.Status == "Busy" || x.Status == "OutOfOffice").ToList();
+                        statusDetail.events = statusDetail.events.Where(x => x.Status == "Busy" || x.Status == "OutOfOffice").ToList();
                         statusDetail.StatusCode = response.StatusCode;
                     }
                     else
                     {
-                        Console.Write($"API returned with unsucess status code:{response.StatusCode} and Message:{response.Content}");
+                        _logger.LogInformation($"API returned with unsucess status code:{response.StatusCode} and Message:{response.Content}");
                         statusDetail.StatusCode = response.StatusCode;
                     }
                 }
                 catch(Exception ex)
                 {
-                    Console.Write($"Exception occured while invoking status API:{ex.Message}");
+                    _logger.LogError($"Exception occured while invoking status API:{ex.Message}");
                 }
 
             }

@@ -1,10 +1,12 @@
 ﻿
 namespace WebApplication1.Controllers
 {
+    using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
     using StatusRetrievalApplication.Validation;
     using System.Threading.Tasks;
+    using WebApplication1.Models;
     using WebApplication1.Services;
 
     [ApiController]
@@ -42,7 +44,8 @@ namespace WebApplication1.Controllers
             var statusDetail = await _eventService.GetStatusDetails(email);
             if(statusDetail.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                return Ok(statusDetail);
+                var res = new JsonResult(statusDetail);
+                return StatusCode((int)System.Net.HttpStatusCode.OK,statusDetail);
             }
 
             else if(statusDetail.StatusCode == System.Net.HttpStatusCode.BadRequest)

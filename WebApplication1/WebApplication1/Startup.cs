@@ -38,7 +38,9 @@ namespace WebApplication1
             });
             services.AddScoped<IEventService, EventService>();
             services.AddControllers().AddJsonOptions(x =>
-   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+            services.AddControllers().AddNewtonsoftJson();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
