@@ -32,7 +32,7 @@ namespace WebApplication1.Services
                     if (response.IsSuccessStatusCode)
                     {
                         statusDetail = JsonConvert.DeserializeObject<StatusDetail>(await response.Content.ReadAsStringAsync());
-                        statusDetail.events = statusDetail.events.Where(x => x.Status == "Busy" || x.Status == "OutOfOffice").ToList();
+                        statusDetail.Events = statusDetail.Events.Where(x => x.Status == "Busy" || x.Status == "OutOfOffice").ToList();
                         statusDetail.StatusCode = response.StatusCode;
                     }
                     else

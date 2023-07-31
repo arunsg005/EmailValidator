@@ -3314,11 +3314,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arun.g\\Desktop\\EmailValidator\\WebApplication1\\WebApplication1\\StatusRetrievalApplication.csproj",
+      "projectUniqueName": "C:\\Users\\arun.g\\Desktop\\EmailValidator\\FetchStatusApplication\\WebApplication1\\WebApplication1\\StatusRetrievalApplication.csproj",
       "projectName": "StatusRetrievalApplication",
-      "projectPath": "C:\\Users\\arun.g\\Desktop\\EmailValidator\\WebApplication1\\WebApplication1\\StatusRetrievalApplication.csproj",
+      "projectPath": "C:\\Users\\arun.g\\Desktop\\EmailValidator\\FetchStatusApplication\\WebApplication1\\WebApplication1\\StatusRetrievalApplication.csproj",
       "packagesPath": "C:\\Users\\arun.g\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arun.g\\Desktop\\EmailValidator\\WebApplication1\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Users\\arun.g\\Desktop\\EmailValidator\\FetchStatusApplication\\WebApplication1\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\arun.g\\AppData\\Roaming\\NuGet\\NuGet.Config",

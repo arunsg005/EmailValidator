@@ -44,7 +44,6 @@ namespace WebApplication1.Controllers
             var statusDetail = await _eventService.GetStatusDetails(email);
             if(statusDetail.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                var res = new JsonResult(statusDetail);
                 return StatusCode((int)System.Net.HttpStatusCode.OK,statusDetail);
             }
 

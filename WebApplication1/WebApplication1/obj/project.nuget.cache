@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xkZ3DEQNz+zgmV0vuG6A8pAqhkALSm6JW78ioJdAg8JEZgf4KNjF9BIeA0/9Q0NDerMTOtRQ6or4X5ZL66za7Q==",
+  "dgSpecHash": "TSOu4sEuDD7zzdL8epEFihJrt6pmVWtTNRk4nxeKJ8bVAr+Wp/ctuZ6A4rDWXW3o6S14iCr99fUZ9gSSY7luKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arun.g\\Desktop\\EmailValidator\\WebApplication1\\WebApplication1\\StatusRetrievalApplication.csproj",
+  "projectFilePath": "C:\\Users\\arun.g\\Desktop\\EmailValidator\\FetchStatusApplication\\WebApplication1\\WebApplication1\\StatusRetrievalApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arun.g\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.9\\microsoft.aspnetcore.jsonpatch.7.0.9.nupkg.sha512",
     "C:\\Users\\arun.g\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.9\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.9.nupkg.sha512",
